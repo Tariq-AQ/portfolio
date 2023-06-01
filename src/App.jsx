@@ -7,7 +7,7 @@ const App = () => {
   const[captionValue, setCaptionValue] = useState('')
   return (
     <>
-   {captionVisible && captionValue!==''?  <div className="caption__container">
+   {captionValue!==''?  <div className="caption__container">
      <h1>{captionValue}</h1>
     </div>:null}
     <Header />
