@@ -2,12 +2,12 @@ import React from 'react'
 import './footer.css'
 import {FaFacebookF} from 'react-icons/fa'
 import {FiInstagram} from 'react-icons/fi'
+const signature = require('../../assets/signature.png')
 
 
 function Footer({activeNav, setActiveNav}) {
   return (
     <footer>
-      {/* <a href="#" className='footer_logo' >Tariq</a> */}
       <ul className="permalinks">
         <li><a href="#" onClick={()=>setActiveNav('#')}>Home</a></li>
         <li><a href="#about" onClick={()=>setActiveNav('about')}>About</a></li>
@@ -19,8 +19,9 @@ function Footer({activeNav, setActiveNav}) {
       <div className="footer__socials">
         <a href="https://instagram.com"><FaFacebookF/></a>
         <a href="https://www.instagram.com/tariq_esa90/"><FiInstagram/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
       </div>
+      <img src={signature} alt="Tariq" />
+
       <div className="footer__copyright">
         <small>&copy; Tariq Aziz Portfolio</small>
       </div>

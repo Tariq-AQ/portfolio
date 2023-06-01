@@ -35,6 +35,12 @@ header{
     color: var(--color-white);
     font-size: 24px;
 }
+.header__socials>a:hover{
+    transition: var(--transition);
+
+    color: var(--color-primary);
+    font-size: 24px;
+}
 /* .header__socials::after{
     content: '';
     width: 1px;
@@ -71,6 +77,10 @@ img{
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
 
 }
 
