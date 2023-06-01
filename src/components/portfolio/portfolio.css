@@ -1,0 +1,89 @@
+.portfolio__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+
+}
+.portfolio__item{
+    background: var(--color-bg-varient);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    
+}
+
+.portfolio__item:hover{
+border-color: var(--color-primary-varient);
+background: transparent;
+transition:var(--transition);
+
+
+}
+.portfolio__item:hover  .each__technology{
+    background-color: var(--color-bg-varient);
+
+}
+
+.portfolio__item-image{
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.portfolio__item h3{
+    margin: 0.5rem 0 0.2rem;
+}
+
+.portfolio__item-cta{
+   display: flex;
+   margin: 1rem 0.3rem 0rem 0;
+   gap: 0.5rem;
+   text-align: center;
+   align-items: center;
+}
+.portfolio__item-cta > .btn{
+ border-radius: 1rem;
+ height: 40px;
+ display: flex;
+ align-items: center;
+}
+.tech__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.each__technology{
+    text-align: center;
+    background:transparent;
+    border: 1px solid var(--color-light);
+    margin: 0.2rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+.project__description{
+    color: var(--color-light);
+}
+.each__technology:hover{
+    background: var(--color-bg);
+}
+
+.separator{
+    margin: 1rem 2rem 1rem 0;
+    height: 1px;
+    width: 100%;
+    background:linear-gradient(90deg, transparent, var(--color-light), transparent)
+}
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) =================== */
+@media screen and (max-width:1024px){
+    .portfolio__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) =================== */
+@media screen and (max-width:600px){
+.portfolio__container{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+}

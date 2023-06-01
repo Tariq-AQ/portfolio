@@ -1,0 +1,120 @@
+
+
+.flash__message{
+    background:linear-gradient(90deg, transparent, var(--color-light), transparent);
+    margin-bottom: 1rem;
+    height: 1px;
+    color: var(--color-bg);
+    text-align: center;
+    transition: var(--transition);
+    display: block;
+
+   
+}
+
+.flash__message-hidden{
+    background:linear-gradient(90deg, transparent, var(--color-light), transparent);
+    height: 30px;
+    color: var(--color-bg);
+    transition: var(--transition);
+    text-align: center;
+    margin-bottom: 1rem;
+
+
+}
+
+.flash__invisible{
+    display: none;
+}
+
+.container.contact__container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:12%;
+    margin: auto;
+
+}
+.contact__options{
+     display: flex;
+     flex-direction: column;
+     gap: 1.2rem;
+}
+
+.contact__option{
+    background: var(--color-bg-varient);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+.contact__option a{
+   color: var(--color-white);
+   font-weight: bold;
+}
+.contact__option h4, h5{
+   color: var(--color-light);
+}
+
+.contact__option:hover{
+    background:transparent;
+    border-color: var(--color-primary-varient);
+}
+.contact__option-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-light);
+}
+
+.contact__option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+form .btn{
+    margin: 1rem;
+}
+
+/* ======================= FORM ======================= */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background:transparent;
+    border: 2px solid var(--color-primary-varient);
+    resize: none;
+    color: var(--color-white);
+}
+
+input:focus, textarea:focus{
+   
+    border: 2px solid var(--color-primary);
+  
+}
+
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) =================== */
+@media screen and (max-width:1024px){
+    .contact.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+/* ============= MEDIA QUERIES (SMALL DEVICES) =================== */
+@media screen and (max-width:600px){
+    .container.contact__container{
+        width: var(--container-width-sm);
+        grid-template-columns: 1fr;
+
+
+    }
+
+
+}
