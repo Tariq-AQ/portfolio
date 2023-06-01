@@ -61,9 +61,12 @@ header{
 .header__socials>a{
     color: var(--color-white);
     font-size: 24px;
+    transition: 100ms ease;
+
 }
 .header__socials>a:hover{
-    transition: var(--transition);
+      transition: 100ms ease;
+
 
     color: var(--color-primary);
     font-size: 24px;

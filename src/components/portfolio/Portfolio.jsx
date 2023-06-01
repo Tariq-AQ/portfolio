@@ -1,6 +1,5 @@
 import React from 'react'
 import './portfolio.css'
-import { port1, port2, port3, port4, port5, port6 } from '../../assets'
 import { arrayOfProjects } from './array'
 
 function Portfolio() {
@@ -32,8 +31,8 @@ function Portfolio() {
             </div>
            <div className="portfolio__item-cta">
             {/* Only show Demo button if there's a live version of the app */}
-             {demo?<a href={demo} className='btn' target='_blank'>Demo</a>:null } 
-            <a href={github} className='btn btn-primary' target='_blank'>Github</a>
+             {demo?<a href={demo} className='btn' target='_blank' rel="noreferrer">Demo</a>:null } 
+            <a href={github} className='btn btn-primary' target='_blank' rel="noreferrer">Github</a>
            </div>
           </article>
           )

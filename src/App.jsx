@@ -6,8 +6,10 @@ const App = () => {
   const[activeNav, setActiveNav] = useState('#')
   const[captionVisible, setCaptionVisible] = useState(false)
   const[captionValue, setCaptionValue] = useState('')
-  const [currentScheme, setCurrentScheme] = useState('Default')
+  // const [currentScheme, setCurrentScheme] = useState('default')
   const [schemeCaption, setSchemeCaption]=useState('')
+
+
 
   return (
     <>
@@ -15,7 +17,7 @@ const App = () => {
      <h1>{captionValue}</h1>
     </div>:null}
 
-    <ColorScheme currentScheme={currentScheme} setCurrentScheme={setCurrentScheme} schemeCaption={schemeCaption} setSchemeCaption={setSchemeCaption} />
+    <ColorScheme  schemeCaption={schemeCaption} setSchemeCaption={setSchemeCaption} />
     <Header />
     <Nav captionValue={captionValue} setCaptionValue={setCaptionValue}
      captionVisible={captionVisible} setCaptionVisible={setCaptionVisible}
