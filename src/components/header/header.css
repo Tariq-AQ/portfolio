@@ -137,7 +137,7 @@ img{
      
 }
 
-/* ============= MEDIA QUERIES (SMALL DEVICES) =================== */
+/* ============= MEDIA QUERIES (SMALL DEVICES) HEIGH BASED =================== */
 @media screen and (max-height:800px){
     header{
         height:80vh;

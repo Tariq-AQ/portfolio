@@ -51,7 +51,7 @@ function ColorScheme({ schemeCaption, setSchemeCaption}) {
                 <div className="sheme__set" id='rose' onClick={()=>toggleScheme('rose')} onMouseOver={()=>setSchemeCaption('Rose')} onMouseLeave={()=>setSchemeCaption('')}>
                     <div style={{'background':'#8d596f'}} className="primay__color"></div>
                     <div style={{'background':'#cda1ba'}} className="primay__color__varient"></div>
-                    <div style={{'background':'#283d3e'}} className="bg__color"></div>
+                    <div style={{'background':'#290016'}} className="bg__color"></div>
                     <div style={{'background':'#6c6b4c'}} className="bg__color__varient"></div>
                 </div>
                 <div className="sheme__set" id='default' onClick={()=>toggleScheme('default')} onMouseOver={()=>setSchemeCaption('Default')} onMouseLeave={()=>setSchemeCaption('')}>
