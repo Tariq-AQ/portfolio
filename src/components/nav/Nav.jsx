@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { useEffect } from 'react'
 import './nav.css'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
@@ -10,18 +10,31 @@ import {RiGalleryLine} from 'react-icons/ri'
 // import { useState } from 'react'
 
 
-function Nav({activeNav, setActiveNav, captionValue, setCaptionValue, captionVisible, setCaptionVisible}) {
-//  const[activeNav, setActiveNav] = useState('#')
+function Nav({activeNav, setActiveNav,  setCaptionValue}) {
 
-// const handleClick = (captionText)=>{
-// setCaptionValue(captionText)
-// setCaptionVisible(true)
-// setTimeout(() => {
-//   setCaptionValue('')
-//   setCaptionVisible(false)
+
+// listen for scrolling and update active nav accordingly
+  window.addEventListener('scroll', handleScroll);
+  function handleScroll() {
+    const sections = document.querySelectorAll('section');
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight ;
+      const scrollPosition = window.pageYOffset;
   
-// }, 200);
-// }
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        // This section is currently in view
+        const sectionId = section.getAttribute('id');
+        setActiveNav(sectionId)
+        console.log('Current section:', sectionId);
+      }
+    });
+  }
+
+ 
+  
+
   return (
     <nav>
       <a href="#" onMouseOver={()=>setCaptionValue('HOME')} onMouseLeave={()=>setCaptionValue('')} onClick={()=>setActiveNav('#')} className={activeNav ==='#'? 'active' : ''}><AiOutlineHome/></a>

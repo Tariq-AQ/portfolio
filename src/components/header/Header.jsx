@@ -25,7 +25,7 @@ function Header() {
                 <img className='about__me__image' src={Me} alt="" />
             </div>
         </div>
-    {/* <a href="#" className='scroll__down'>Scroll Down <MdOutlineKeyboardDoubleArrowRight/> </a> */}
+    <a href="#about" className='scroll__down'>Scroll Down <MdOutlineKeyboardDoubleArrowRight/> </a>
 
 </div>
 </header>
