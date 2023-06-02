@@ -4,8 +4,7 @@
     width: max-content;
     height: 140px;
     padding: 0.5rem;
-    right: 0;
-    left: 95% ;
+    right: -5px;
     margin: 1rem;
     margin-right: -90px;
     top:30%;
@@ -20,7 +19,7 @@
     z-index: 100;
 }
 .color__scheme:hover{
-    left: 85%;
+    right: 95px;
     /* margin-right: 8px; */
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
     border: 1px solid var(--color-white);
@@ -86,3 +85,4 @@
 .color__caption-hidden{
     display: none;
 }
+
