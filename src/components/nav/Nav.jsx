@@ -8,15 +8,22 @@ import {RiServiceLine} from 'react-icons/ri'
 import {AiOutlineMessage} from 'react-icons/ai'
 import {RiGalleryLine} from 'react-icons/ri'
 // import { useState } from 'react'
+import '../../app.css'
 
 
-function Nav({activeNav, setActiveNav,  setCaptionValue}) {
+
+function Nav({activeNav, setActiveNav,  setCaptionValue, captionValue}) {
 
  
   
 
   return (
+  
     <nav>
+        {captionValue!==''?  <div className="caption__container">
+     <h1>{captionValue}</h1>
+    </div>:null}
+    
       <a href="#" onMouseOver={()=>setCaptionValue('HOME')} onMouseLeave={()=>setCaptionValue('')} onClick={()=>setActiveNav('#')} className={activeNav ==='#'? 'active' : ''}><AiOutlineHome/></a>
       <a href="#about"  onMouseOver={()=>setCaptionValue('ABOUT')} onMouseLeave={()=>setCaptionValue('')}  onClick={()=>setActiveNav('about')} className={activeNav ==='about'? 'active' : ''}><AiOutlineUser/></a>
       <a href="#experience" onMouseOver={()=>setCaptionValue('EXPERIENCE')} onMouseLeave={()=>setCaptionValue('')} onClick={()=>setActiveNav('experience')} className={activeNav ==='experience'? 'active' : ''}><BiBook/></a>

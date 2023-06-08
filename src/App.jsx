@@ -11,13 +11,13 @@ const App = () => {
 
   return (
     <>
-   {captionValue!==''?  <div className="caption__container">
+   {/* {captionValue!==''?  <div className="caption__container">
      <h1>{captionValue}</h1>
-    </div>:null}
+    </div>:null} */}
 
     <ColorScheme  schemeCaption={schemeCaption} setSchemeCaption={setSchemeCaption} />
     <Header />
-    <Nav  setCaptionValue={setCaptionValue}
+    <Nav captionValue={captionValue} setCaptionValue={setCaptionValue}
       activeNav={activeNav} setActiveNav={setActiveNav} />
     <About/>
     <Experience/>

@@ -46,8 +46,35 @@ header{
     gap:1.2rem;
     justify-content: center;
     margin-bottom: 2rem;
-    
 }
+.cta a{
+    border: 2px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+#cta__contact{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+/* background: var(--color-primary);
+color: var(--color-bg); */
+border: none;
+cursor: pointer;
+overflow: hidden;
+background-size: 100% 200%;
+background-image: linear-gradient(to bottom, var(--color-primary) 50%, var(--color-white) 50%);
+-webkit-transition: background-position var(--transition);
+-moz-transition: background-position var(--transition);
+transition: background-position var(--transition);
+}
+
+
+
+#cta__contact:hover {
+    background-position: 0 -100%;
+  }
 
 /* ===================== Socials ====================== */
 .header__socials{
@@ -68,18 +95,9 @@ header{
 }
 .header__socials>a:hover{
       transition: 100ms ease;
-
-
     color: var(--color-primary);
     font-size: 24px;
 }
-/* .header__socials::after{
-    content: '';
-    width: 1px;
-    height: 1rem;
-    background:var(--color-primary)
-} */
-
 /* ===================== ME ====================== */
 
 .me{

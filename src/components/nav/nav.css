@@ -16,6 +16,10 @@ nav{
 
 
 }
+/* .container{
+    display: flex;
+    justify-content: center;
+} */
 nav:hover{
     box-shadow: 2px 0px 10px rgba(255, 255, 255, 0.6);
     transition: var(--transition);
