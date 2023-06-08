@@ -1,8 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-// import ME from '../../assets/me.png'
-import Me from '../../assets/me-about.jpg'
+import ThreeD from '../3d/ThreeD'
 import HeaderSocials from './HeaderSocials'
 import {MdOutlineKeyboardDoubleArrowRight} from 'react-icons/md'
 
@@ -12,16 +11,23 @@ function Header() {
 <header>
 <div className="container header__container">
   <h5>Hello, I'm</h5>
-  <h1>Tariq Aziz</h1>
+  <div className="name__container">
+    <p>T</p>
+    <p>a</p>
+    <p>r</p>
+    <p>i</p>
+    <p>q</p>
+    <p>&nbsp;</p>
+    <p>A</p>
+    <p>z</p>
+    <p>i</p>
+    <p>z</p>
+  </div>
   <h5 className="text-light">Fullstack Developer</h5>
   <CTA/>
 <HeaderSocials/>
+<ThreeD/>
 
-  {/* <div className="about__me">
-            <div className="about__me-image">
-                <img className='about__me__image' src={Me} alt="" />
-            </div>
-        </div> */}
     <a href="#about" className='scroll__down'>Scroll Down <MdOutlineKeyboardDoubleArrowRight/> </a>
 
 </div>
