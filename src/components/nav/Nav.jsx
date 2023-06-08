@@ -12,26 +12,6 @@ import {RiGalleryLine} from 'react-icons/ri'
 
 function Nav({activeNav, setActiveNav,  setCaptionValue}) {
 
-
-// listen for scrolling and update active nav accordingly
-  window.addEventListener('scroll', handleScroll);
-  function handleScroll() {
-    const sections = document.querySelectorAll('section');
-    
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight ;
-      const scrollPosition = window.pageYOffset;
-  
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        // This section is currently in view
-        const sectionId = section.getAttribute('id');
-        setActiveNav(sectionId)
-        console.log('Current section:', sectionId);
-      }
-    });
-  }
-
  
   
 

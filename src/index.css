@@ -18,7 +18,7 @@
 :root{
     --color-bg: #00293b;
     --color-bg-varient: #006080;
-    --color-bg-light: #00aab7;
+    --color-bg-light: #0a3345;
     --color-primary: #f8b300;
     --color-primary-varient: #c77000;
     --color-white: #ffffff;
@@ -34,7 +34,7 @@
 [data-theme="summer"]{
     --color-bg: #32201e;
     --color-bg-varient: #714912;
-    --color-bg-light: #853125;
+    --color-bg-light: #362826;
     --color-primary: #e49f44;
     --color-primary-varient: #f8de59;
     --color-white: #ffffff;
@@ -43,7 +43,7 @@
 [data-theme="peacock"]{
     --color-bg: #01253b;
     --color-bg-varient: #006376;
-    --color-bg-light: #03c1cc;
+    --color-bg-light: #0b2a3d;
     --color-primary: #d48c34;
     --color-primary-varient: #05771f;
     --color-white: #ffffff;
@@ -73,7 +73,6 @@ body{
     background: var(--color-bg);
     color:var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
     transition: var(--transition);
 }
 
@@ -95,6 +94,7 @@ h1{
 
 section{
     margin-top: 8rem;
+    height: max-content;
 }
 
 section > h2, section>h5{

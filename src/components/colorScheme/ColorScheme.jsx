@@ -37,22 +37,22 @@ function ColorScheme({ schemeCaption, setSchemeCaption}) {
             <div className="scheme__group">
                
                 <div className="sheme__set" id='summer' onClick={()=>toggleScheme('summer')} onMouseOver={()=>setSchemeCaption('Summer')} onMouseLeave={()=>setSchemeCaption('')}>
-                    <div style={{'background':'#cd5a24'}} className="primay__color"></div>
-                    <div style={{'background':'#f58c3b'}} className="primay__color__varient"></div>
+                    <div style={{'background':'#e49f44'}} className="primay__color"></div>
+                    <div style={{'background':'#f8de59'}} className="primay__color__varient"></div>
                     <div style={{'background':'#32201e'}} className="bg__color"></div>
-                    <div style={{'background':'#a43627'}} className="bg__color__varient"></div>
+                    <div style={{'background':'#714912'}} className="bg__color__varient"></div>
                 </div>
                 <div className="sheme__set" id='peacock' onClick={()=>toggleScheme('peacock')} onMouseOver={()=>setSchemeCaption('Peacock')} onMouseLeave={()=>setSchemeCaption('')}>
-                    <div style={{'background':'#3f002d'}} className="primay__color"></div>
-                    <div style={{'background':'#a854aa'}} className="primay__color__varient"></div>
+                    <div style={{'background':'#d48c34'}} className="primay__color"></div>
+                    <div style={{'background':'#05771f'}} className="primay__color__varient"></div>
                     <div style={{'background':'#01253b'}} className="bg__color"></div>
                     <div style={{'background':'#006376'}} className="bg__color__varient"></div>
                 </div>
                 <div className="sheme__set" id='rose' onClick={()=>toggleScheme('rose')} onMouseOver={()=>setSchemeCaption('Rose')} onMouseLeave={()=>setSchemeCaption('')}>
-                    <div style={{'background':'#8d596f'}} className="primay__color"></div>
-                    <div style={{'background':'#cda1ba'}} className="primay__color__varient"></div>
-                    <div style={{'background':'#290016'}} className="bg__color"></div>
-                    <div style={{'background':'#6c6b4c'}} className="bg__color__varient"></div>
+                    <div style={{'background':'#bf6598'}} className="primay__color"></div>
+                    <div style={{'background':'#8d596f'}} className="primay__color__varient"></div>
+                    <div style={{'background':'#19000d'}} className="bg__color"></div>
+                    <div style={{'background':'#455858'}} className="bg__color__varient"></div>
                 </div>
                 <div className="sheme__set" id='default' onClick={()=>toggleScheme('default')} onMouseOver={()=>setSchemeCaption('Default')} onMouseLeave={()=>setSchemeCaption('')}>
                     <div style={{'background': '#f8b300'}} className="primay__color"></div>

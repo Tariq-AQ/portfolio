@@ -4,9 +4,7 @@ import {Header,Nav,About,Footer,Experience,Services,Portfolio,Testimonial, Conta
 import ColorScheme from './components/colorScheme/ColorScheme'
 const App = () => {
   const[activeNav, setActiveNav] = useState('#')
-  const[captionVisible, setCaptionVisible] = useState(false)
   const[captionValue, setCaptionValue] = useState('')
-  // const [currentScheme, setCurrentScheme] = useState('default')
   const [schemeCaption, setSchemeCaption]=useState('')
 
 
@@ -19,8 +17,7 @@ const App = () => {
 
     <ColorScheme  schemeCaption={schemeCaption} setSchemeCaption={setSchemeCaption} />
     <Header />
-    <Nav captionValue={captionValue} setCaptionValue={setCaptionValue}
-     captionVisible={captionVisible} setCaptionVisible={setCaptionVisible}
+    <Nav  setCaptionValue={setCaptionValue}
       activeNav={activeNav} setActiveNav={setActiveNav} />
     <About/>
     <Experience/>

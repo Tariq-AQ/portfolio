@@ -5,16 +5,19 @@
 }
 
 .experience__container > div{
-    background:var(--color-bg-varient);
+    background: linear-gradient(40deg, var(--color-bg),  var(--color-bg-light));
     padding: 2rem;
     border-radius: 2rem;
     border: 2px solid transparent;
+    box-shadow: -5px 5px 10px rgba(0,0,0, 0.3);
+
 }
 
 .experience__container>div:hover{
-    background:transparent;
-    border-color: var(--color-primary-varient);
+    background: var(--color-bg-light);
     cursor: default;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+
 }
 .experience__container>div h3{
     text-align: center;

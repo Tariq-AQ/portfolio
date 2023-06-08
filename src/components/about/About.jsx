@@ -2,7 +2,6 @@ import React from 'react'
 import './about.css'
 // import Me from '../../assets/me-about.jpg'
 import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
 function About() {
@@ -21,14 +20,7 @@ function About() {
               <h5>Experience</h5>
               <small>3+ years academic experience</small>
             </article>
-            
-
-            <article className='about__card'>
-              <FiUsers className='about__icon' />
-              <h5>Clients</h5>
-              <small>10+ clients</small>
-            </article>
-
+      
             <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
