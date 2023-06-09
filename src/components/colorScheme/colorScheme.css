@@ -105,3 +105,14 @@ transform: translateY(0px);
     display: none;
 }
 
+/* ============= MEDIA QUERIES (SMALL DEVICES) =================== */
+@media screen and (max-width:600px){
+   
+ 
+
+.color__scheme{
+    right: -85px;
+ 
+}
+
+}
