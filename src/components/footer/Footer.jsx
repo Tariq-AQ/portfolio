@@ -2,6 +2,7 @@ import React from 'react'
 import './footer.css'
 import {FaFacebookF} from 'react-icons/fa'
 import {FiInstagram} from 'react-icons/fi'
+import { isDisabled } from '@testing-library/user-event/dist/utils'
 const signature = require('../../assets/signature.png')
 
 
@@ -16,8 +17,8 @@ function Footer({activeNav, setActiveNav}) {
         <li><a href="#portfolio" onClick={()=>setActiveNav('portfolio')}>Portfolio</a></li>
         <li><a href="#contact" onClick={()=>setActiveNav('contact')}>Contact</a></li>
       </ul>
-      <div className="footer__socials">
-        <a href="https://instagram.com"><FaFacebookF/></a>
+      <div className="footer__socials" >
+        <a href="https://instagram.com" ><FaFacebookF/></a>
         <a href="https://www.instagram.com/tariq_esa90/"><FiInstagram/></a>
       </div>
       <img src={signature} alt="Tariq" />

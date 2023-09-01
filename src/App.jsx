@@ -21,7 +21,6 @@ const App = () => {
       activeNav={activeNav} setActiveNav={setActiveNav} />
     <About/>
     <Experience/>
-    <Services />
     <Portfolio />
     <Contact />
     <Footer activeNav={activeNav} setActiveNav={setActiveNav} />

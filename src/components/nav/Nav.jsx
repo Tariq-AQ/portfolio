@@ -27,7 +27,6 @@ function Nav({activeNav, setActiveNav,  setCaptionValue, captionValue}) {
       <a href="#" onMouseOver={()=>setCaptionValue('HOME')} onMouseLeave={()=>setCaptionValue('')} onClick={()=>setActiveNav('#')} className={activeNav ==='#'? 'active' : ''}><AiOutlineHome/></a>
       <a href="#about"  onMouseOver={()=>setCaptionValue('ABOUT')} onMouseLeave={()=>setCaptionValue('')}  onClick={()=>setActiveNav('about')} className={activeNav ==='about'? 'active' : ''}><AiOutlineUser/></a>
       <a href="#experience" onMouseOver={()=>setCaptionValue('EXPERIENCE')} onMouseLeave={()=>setCaptionValue('')} onClick={()=>setActiveNav('experience')} className={activeNav ==='experience'? 'active' : ''}><BiBook/></a>
-      <a href="#services" onMouseOver={()=>setCaptionValue('SERVICES')} onMouseLeave={()=>setCaptionValue('')} onClick={()=>setActiveNav('services')} className={activeNav ==='services'? 'active' : ''}><RiServiceLine/></a>
       <a href="#portfolio" onMouseOver={()=>setCaptionValue('PORTFOLIO')} onMouseLeave={()=>setCaptionValue('')} onClick={()=>setActiveNav('portfolio')} className={activeNav ==='portfolio'? 'active' : ''}><RiGalleryLine/></a>
       <a href="#contact" onMouseOver={()=>setCaptionValue('CONTACT')} onMouseLeave={()=>setCaptionValue('')} onClick={()=>setActiveNav('contact')} className={activeNav ==='contact'? 'active' : ''}><AiOutlineMessage/></a>
     </nav>

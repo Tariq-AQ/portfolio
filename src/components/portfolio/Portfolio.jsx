@@ -31,7 +31,7 @@ function Portfolio() {
             </div>
            <div className="portfolio__item-cta">
             {/* Only show Demo button if there's a live version of the app */}
-             {demo?<a href={demo} className='btn' target='_blank' rel="noreferrer">Demo</a>:null } 
+             {demo?<a href={demo} className='btn' target='_blank' rel="noreferrer">Live View</a>:null } 
             <a href={github} className='btn btn-primary' target='_blank' rel="noreferrer">Github</a>
            </div>
           </article>
